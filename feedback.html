@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Teaching Toolkit</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="responseMessage"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 AI Teaching Toolkit</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
