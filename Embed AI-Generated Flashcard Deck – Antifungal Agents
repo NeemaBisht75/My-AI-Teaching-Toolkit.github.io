@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Antifungal Flashcards</title>
+  <style>
+    body { font-family: Arial; text-align: center; background-color: #f8f8f8; padding: 30px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px auto; width: 80%; max-width: 400px; cursor: pointer; }
+    .question, .answer { font-size: 18px; }
+    .answer { display: none; color: #333; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<h2>🧠 Antifungal Agents – Flashcards</h2>
+
+<div class="card" onclick="toggleAnswer(this)">
+  <div class="question">Q1: What is the mechanism of action of Azoles?</div>
+  <div class="answer">Azoles inhibit the fungal enzyme lanosterol 14α-demethylase, disrupting ergosterol synthesis.</div>
+</div>
+
+<div class="card" onclick="toggleAnswer(this)">
+  <div class="question">Q2: Name a common polyene antifungal.</div>
+  <div class="answer">Amphotericin B.</div>
+</div>
+
+<div class="card" onclick="toggleAnswer(this)">
+  <div class="question">Q3: Which antifungal is a squalene epoxidase inhibitor?</div>
+  <div class="answer">Terbinafine.</div>
+</div>
+
+<script>
+  function toggleAnswer(card) {
+    const answer = card.querySelector('.answer');
+    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
